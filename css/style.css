@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+#personal-details {
+  border-top: 1px solid black;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+#contact-details {
+  border-top: 1px solid black;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+#emergency-details {
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>survey form</title>
+  </head>
+  <body>
+    <main>
+      <form id="survey-form">
+        <h1 id="title">NEW PATIENT REGISTRATION</h1>
+        <p id="description">Please fill in the form below</p>
+        <div id="personal-details">
+          <label for="name" id="name-label">
+            Name:
+            <input
+              id="name"
+              required
+              type="text"
+              name="name"
+              size="30"
+              maxlength="100"
+              placeholder="enter name e.g Ojonimi"
+            />
+          </label>
+          <label for="email" id="email-label">
+            Email:
+            <input
+              id="email"
+              required
+              type="email"
+              name="email"
+              size="30"
+              maxlength="100"
+              placeholder="enter email e.g sulymanojonimi@gmail.com"
+            />
+          </label>
+          <label for="dropdown">
+            Sex:
+            <select name="sex" id="dropdown">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </label>
+          <label for="date-of-birth">
+            Date of Birth:
+            <div id="date-of-birth">
+              <select name="Month">
+                <option value="January">January</option>
+                <option value="Febuary">Febuary</option>
+                <option value="March">March</option>
+              </select>
+              <select name="Day">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <select name="Year">
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+              </select>
+            </div>
+          </label>
+          <label for="height">
+            Height:
+            <input
+              id="height"
+              type="text"
+              name="height"
+              size="10"
+              maxlength="100"
+            />
+          </label>
+          <label for="weight">
+            Weight:
+            <input
+              id="weight"
+              type="text"
+              name="weight"
+              size="10"
+              maxlength="100"
+            />
+          </label>
+          <div>
+            <p>Symptom:</p>
+            <label>
+              <input type="checkbox" name="back-pain" value="back-pain" />
+              Back pain
+            </label>
+            <label>
+              <input type="checkbox" name="lump" value="lump" />
+              Lump
+            </label>
+            <label>
+              <input type="checkbox" name="skin-rash" value="skin-rash" />
+              Skin rash
+            </label>
+            <label>
+              <input type="checkbox" name="fatigue" value="fatigue" />
+              Fatigue
+            </label>
+          </div>
+        </div>
+        <div id="contact-details">
+          <label for="number" id="number-label">
+            Age:
+            <input
+              id="number"
+              required
+              type="number"
+              name="number"
+              size="20"
+              maxlength="100"
+              min="1"
+              max="100"
+              placeholder="enter age e.g 5"
+            />
+          </label>
+          <label for="marital">
+            Marital:
+            <select name="marital" id="marital">
+              <option value="single">single</option>
+              <option value="married">married</option>
+            </select></label
+          >
+          <label for="address">
+            Address:
+            <input
+              id="address"
+              type="text"
+              name="adress"
+              size="30"
+              maxlength="100"
+            />
+          </label>
+          <label for="city">
+            City:
+            <input
+              id="city"
+              type="text"
+              name="city"
+              size="15"
+              maxlength="100"
+            />
+          </label>
+          <label for="state">
+            State/Province:
+            <input
+              id="state"
+              type="text"
+              name="state"
+              size="10"
+              maxlength="100"
+            />
+          </label>
+        </div>
+        <div id="emergency-details">
+          <p>In case of emergency...</p>
+          <label for="emergency">
+            Full Name:
+            <input
+              id="emergency"
+              type="text"
+              name="emergency"
+              size="30"
+              maxlength="100"
+            />
+          </label>
+          <label for="relationship">
+            Relationship:
+            <input
+              id="relationship"
+              type="text"
+              name="relationship"
+              size="15"
+              maxlength="100"
+            />
+          </label>
+          <label for="contact">
+            Contact Number:
+            <input
+              id="contact"
+              type="text"
+              name="contact"
+              size="15"
+              maxlength="100"
+            />
+          </label>
+        </div>
+        <div>
+          <p>taking any medications currently?</p>
+          <label>
+            <input type="radio" name="medication-status" value="yes" />
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="medication-status" value="no" />
+            No
+          </label>
+          <p>
+            if yes, please list here
+            <label for="comments">
+              Comments:
+            </label>
+
+            <textarea rows="4" cols="40" id="comments"> </textarea>
+          </p>
+          <input id="submit" type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
